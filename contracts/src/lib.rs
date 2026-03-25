@@ -6,19 +6,9 @@ mod crossChainBridge;
 mod chainVerifier;
 mod atomicSwap;
 mod messagePassing;
-mod grantTreasury;
-mod bridges {
-    pub mod event_sync;
-    pub mod chain_listener;
-    pub mod event_relay;
-    pub mod sync_manager;
-}
-mod encryption {
-    pub mod homomorphic_ops;
-    pub mod encrypted_proof;
-}
 
-pub mod proof_verifier;
+pub mod optimization;
+pub mod security;
 
 use soroban_sdk::{contract, contractimpl, contracttype, Address, Bytes, Env, String, Vec};
 
